@@ -8,7 +8,6 @@ cp1_flask - 웹구축
 AI_13_3팀_프로젝트계획서.docx - 프로젝트 계획서  
 AI_13_3team_cp1.pptx - 프로젝트 보고서 및 발표자료  
 
-발표영상 링크 : https://youtu.be/G7dGv7ONPPA
-
+발표영상 링크:
 [![Video Label](http://img.youtube.com/vi/G7dGv7ONPPA/0.jpg)]  
 (https://youtu.be/G7dGv7ONPPA)
