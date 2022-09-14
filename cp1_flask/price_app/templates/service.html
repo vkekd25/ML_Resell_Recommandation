@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+<<<<<<< HEAD
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title> WESELL: SERVICE </title>
+        <script src="https://kit.fontawesome.com/3afed81f0c.js" crossorigin="anonymous"></script>
+        <script src="../static/js/main.js" defer></script>
+    </head>
+    
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="/"><img src="../static/img/horizontal_on_white_by_logaster.png" ></a>
+            </div>
+
+            <ul class="navbar__menu">
+                <li><a href="/"> HOME </a></li>
+                <li><a href="./notice"> NOTICE </a></li>
+                <li><a href="#"> SERVICE </a></li>
+                <li><a href="./dashboard"> DASHBOARD </a></li>
+            </ul>
+
+            <ul class="navbar__icons">
+                <li><a href="./login"> LOGIN </a></li>
+                <li><a href={{ url_for('logout') }}> LOGOUT </a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+
+            <a href="#" class="navbar__toglebtn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+
+        <main>
+            <section class="service_form">     
+                <div calss="mainservice">
+                    <form class="change" id="upload" action="/service/predict" method="POST" >
+                        <div style="text-align: center;">
+                            <a style=" padding-top: 10px;" href="#">
+                                <img src="../static/img/horizontal_on_white_by_logaster.png" alt="">
+                            </a>
+                        </div>
+                        <br><br><br><br>
+
+                        <div><label for="price"> 가격 </label>
+                            <br>
+                            <input type="number" value="price" name="price" placeholder="가격을 입력해주세요">
+                        </div>
+                        <br>    
+
+                        <div>
+                            <label for="location"> 거래 지역 </label>
+                            <br>
+                            <select id="location" name="location">
+                                <optgroup label="거래지역">
+                                    <option value="전국"> 전국 </option>
+                                    <option value="서울"> 서울 </option>
+                                    <option value="경기도"> 경기도 </option>
+                                    <option value="인천"> 인천 </option>
+                                    <option value="강원도"> 강원도 </option>
+                                    <option value="충북"> 충북 </option>
+                                    <option value="충남"> 충남 </option>
+                                    <option value="세종"> 세종 </option>
+                                    <option value="대전"> 대전 </option>
+                                    <option value="경북"> 경북 </option>
+                                    <option value="경남"> 경남 </option>
+                                    <option value="대구"> 대구 </option>
+                                    <option value="울산"> 울산 </option>
+                                    <option value="부산"> 부산 </option>
+                                    <option value="전북"> 전북 </option>
+                                    <option value="광주"> 광주 </option>
+                                    <option value="전남"> 전남 </option>
+                                    <option value="제주"> 제주 </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="unused"> 개봉 유무 </label>
+                            <br>
+                            <select id="unused" name="unused">
+                                <optgroup label="사용유무">
+                                    <option value="0"> 개봉 </option>
+                                    <option value="1"> 미개봉 </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+
+                        <div>
+                            <label for="model"> 모델 </label>
+                            <br>
+                            <select id="model" name="model">
+                                <optgroup label="갤럭시워치">
+                                    <option value="갤럭시워치"> 갤럭시워치 </option>
+                                </optgroup>
+                                <optgroup label="애플워치">
+                                    <option value="애플워치"> 애플워치 </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+            
+
+                        <div>
+                            <label for="series"> 모델 시리즈 </label>
+                            <br>
+                            <select id="series" name="series">
+                                <optgroup label="갤럭시워치">
+                                    <option value="1"> 1 </option>
+                                    <option value="2"> 3 </option>
+                                    <option value="4"> 4 </option>
+                                    <option value="5"> 5 </option>
+                                    <option value="active1"> active1 </option>
+                                    <option value="active2"> active2 </option>
+                                    <option value="4 classic"> 4 classic </option>
+                                    <option value="5 pro"> 5 pro</option>
+                                </optgroup>
+                                <optgroup label="애플워치">
+                                    <option value="1"> 1 </option>
+                                    <option value="2"> 2 </option>
+                                    <option value="3"> 3 </option>
+                                    <option value="4"> 4 </option>
+                                    <option value="5"> 5 </option>
+                                    <option value="6"> 6 </option>
+                                    <option value="7"> 7 </option>
+                                    <option value="se"> Se </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+
+                        <div>
+                            <label for="size"> 모델 시리즈 크기 </label>
+                            <br>
+                            <select id="size" name="size">
+                                <optgroup label="갤럭시워치">
+                                    <option value="40mm"> 40mm </option>
+                                    <option value="41mm"> 41mm </option>
+                                    <option value="42mm"> 42mm </option>
+                                    <option value="44mm"> 44mm </option>
+                                    <option value="45mm"> 45mm </option>
+                                    <option value="46mm"> 46mm </option>
+                                </optgroup>
+                                <optgroup label="애플워치">
+                                    <option value="38mm"> 38mm </option>
+                                    <option value="40mm"> 40mm </option>
+                                    <option value="41mm"> 41mm </option>
+                                    <option value="42mm"> 42mm </option>
+                                    <option value="44mm"> 44mm </option>
+                                    <option value="45mm"> 45mm </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+
+                        <div>
+                            <label for="gps"> gps/cell </label>
+                            <br>
+                            <select id="gps" name="gps">
+                                <optgroup label="갤럭시워치">
+                                    <option value="bluetooth"> Bluetooth </option>
+                                    <option value="lte"> Lte </option>
+                                </optgroup>
+                                <optgroup label="애플워치">
+                                    <option value="gps"> Gps </option>
+                                    <option value="cellular"> Cellular </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+
+                        <div>
+                            <label for="edition"> 에디션 </label>
+                            <br>
+                            <select id="edition" name="edition">
+                                <optgroup label="갤럭시워치">
+                                    <option value="일반"> 일반 </option>
+                                    <option value="골프"> 골프 </option>
+                                </optgroup>
+                                <optgroup label="애플워치">
+                                    <option value="일반"> 일반 </option>
+                                    <option value="에르메스"> 에르메스 </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+
+                        <div>
+                            <label for="material"> 재질 </label>
+                            <br>
+                            <select id="material" name="material">
+                                <optgroup label="Material">
+                                    <option value="stainless"> Stainless </option>
+                                    <option value="titanium"> Titanium </option>
+                                    <option value="aluminium"> Aluminium </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+
+                        <div>
+                            <label for="quality"> 상품 상태 </label>
+                            <br>
+                            <select id="quality" name="quality">
+                                <optgroup label="Quality">
+                                    <option value="상"> 상 </option>
+                                    <option value="중"> 중 </option>
+                                    <option value="하"> 하 </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+
+                        <div style="display: block; text-align: center;"><p><input type="submit" value="가격 예상하기"></p></div>
+                        <br>
+
+                        <div class="result_lable">
+                            관심 지수는 {{ pred }} 입니다. <br><br>
+                            WESELL: 의 해당 제품 추천 판매가격은 {{ predict }} 원 입니다.
+                        </div>
+                        <ul class="pageurl">
+                            <li>
+                                <a href="https://www.daangn.com/" target="_blank"> 당근마켓 바로가기 </a>
+                            </li>
+                        </ul>
+                        <ul class="pageurl">
+                            <li>
+                                <a href="https://m.bunjang.co.kr/" target="_blank"> 번개장터 바로가기 </a>
+                            </li>
+                        </ul>      
+                    </form>
+                </div>       
+            </section>
+        </main>
+    
+        <footer>
+            <div class="notice_box">
+            </div>
+            <div class="aside_box">
+                <div class="area_user">
+                    <div class="area_user_row">
+                        <span class="text_bold-13"> Project </span>
+                        <ul>
+                            <li><a href="/"> WESELL: </a></li>
+                        </ul>
+                    </div>
+                    <div class="area_user_row">
+                        <span class="text_bold-13"> People </span>
+                        <ul>
+                            <li><a href="https://github.com/vkekd25"> <i class="fa-brands fa-github"></i> 병우 </a></li>
+                            <li><a href="https://github.com/lyj7518"> <i class="fa-brands fa-github"></i> 유진 </a></li>
+                            <li><a href="https://github.com/grewtree"> <i class="fa-brands fa-github"></i> 창수 </a></li>
+                            <li><a href="https://github.com/Daj21"> <i class="fa-brands fa-github"></i> 다정 </a></li>
+                            <li><a href="https://github.com/woals182"> <i class="fa-brands fa-github"></i> 재민 </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_box">
+                <ul>
+                  <li><a href="/">제휴제안</a></li>
+                  <li><a href="/">이용약관</a></li>
+                  <li><a href="/">개인정보처리방침</a></li>
+                  <li><a href="/">고객센터</a></li>
+                  <li><a href="/">&copy; WESELL.</a></li>
+                </ul>
+              </div>
+        </footer>
+=======
+        <title> WESELL : SERVICE </title>
+        <style>
+            * {padding:0; margin: 0; list-style:none;}
+            header nav ul li { 
+                display: block; 
+                margin: auto;
+                text-align: center;
+            }
+            header nav ul li a{
+                display: inline-block;
+                height: 50px;
+                width: 100px;
+                margin: 70px;
+                text-align: center;
+                text-decoration-line: none;
+                color: coral;
+            }
+        </style>
+    </head>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./dashboard.html"> 대시보드 </a>
+                    <a href="/"> 홈 </a>
+                    <a href="#"> 서비스 </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <form class="change" id="upload" action="/service.html/predict" method="POST" >
+            
+            <label for="modelname"> 모델이름 :  </label>
+            <select id="modelname" name="응">
+                <optgroup label="갤럭시">
+                    <option value="갤워치3"> 갤워치3</option>
+                    <option value="갤워치4"> 갤워치4</option>
+                    <option value="갤워치5"> 갤워치5</option>
+                </optgroup>
+                <optgroup label="애플">
+                    <option value="애플워치SE"> 애플워치SE</option>
+                    <option value="애플워치6"> 애플워치6</option>
+                    <option value="애플워치7"> 애플워치7</option>
+                </optgroup>
+            </select><br>
+
+            <label for="open_closed"> 사용유무 :  </label>
+            <select id="open_closed" name="응">
+                <optgroup label="사용유무">
+                    <option value="사용"> 사용</option>
+                    <option value="미사용"> 미사용</option>
+                </optgroup>
+            </select><br>
+            
+            <div style="display: block;"><label for="manner_degree"> 매너온도 :  </label>
+                <input type="number" value="manner_degree" name="manner_degree" placeholder="매너온도를 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div><label for="price"> price :  </label>
+                <input type="number" value="price" name="price" placeholder="price 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div><label for="chat"> 채팅 :  </label>
+                <input type="number" value="chat" name="chat" placeholder="채팅 수를 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div><label for="view"> 뷰 :  </label>
+                <input type="number" value="view" name="view" placeholder="뷰수를 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div><label for="time"> 시간 :  </label>
+                <input type="number" value="time" name="time"placeholder="시간을 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div>
+                <label for="attention"> 관심 :  </label>
+                <input type="number" value="attention" name="attention"placeholder="관심 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div>
+                <label for="open_closed"> 사용유무 :  </label>
+                <input type="number" value="open_closed" name="open_closed"placeholder="사용유무 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div>
+                <label for="modelname"> 모델이름 :  </label>
+                <input type="number" value="modelname" name="modelname"placeholder="모델이름 입력해주세요">
+            </div>
+            <br><br>
+            
+            <div>
+                <label for="discounted"> 할인율 :  </label>
+                <input type="number" value="discounted" name="discounted"placeholder="할인율 입력해주세요">
+            </div>        
+            <br><br>
+            
+            <div><label for="origin_price"> origin_price :  </label>
+                <input type="number" value="origin_price" name="origin_price"placeholder="origin_price 입력해주세요">
+            </div>
+            
+            <div style="display: block;"><p><input type="submit" value="결과"></p></div>
+            <br><br><br><br>
+            
+            <span class="result_lable">
+                예상 추천 가격  {{ predict }}  입니다.
+            </span>
+        </form>
+>>>>>>> d5239a0c140c3f9a7920c288f059c24c4156fda8
+    </body>
+
+</html>

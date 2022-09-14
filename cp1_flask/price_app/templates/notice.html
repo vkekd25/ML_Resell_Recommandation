@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title> WESELL: NOTICE</title>
+        <script src="https://kit.fontawesome.com/3afed81f0c.js" crossorigin="anonymous"></script>
+        <script src="../static/js/main.js" defer></script>
+    </head>
+
+
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="/"><img src="../static/img/horizontal_on_white_by_logaster.png" ></a>
+            </div>
+
+            <ul class="navbar__menu">
+                <li><a href="/"> HOME </a></li>
+                <li><a href="#"> NOTICE </a></li>
+                <li><a href="./service"> SERVICE </a></li>
+                <li><a href="./dashboard"> DASHBOARD </a></li>
+            </ul>
+
+            <ul class="navbar__icons">
+                <li><a href="./login"> LOGIN </a></li>
+                <li><a href={{ url_for('logout') }}> LOGOUT </a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+            <a href="#" class="navbar__toglebtn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+
+        <div class="board_list_wrap">
+            <table class="board_list">
+                <caption> 공지사항 </caption>
+                <thead>
+                    <tr>
+                        <th> 번호 </th>
+                        <th> 제목 </th>
+                        <th> 글쓴이 </th>
+                        <th> 작성일 </th>
+                        <th> 조회 </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num"> 1 </td>
+                        <td class="title"> <a href="#"> 공지가 없습니다 </a> </td>
+                        <td> 관리자 </td>
+                        <td> 2022-09-13 </td>
+                        <td> 0 </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paging">
+                <a href="#" class="bt"> 이전 페이지 </a>
+                <a href="#" class="number on"> 1 </a>
+                <a href="#" class="bt"> 다음 페이지 </a>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="notice_box">
+            </div>
+            <div class="aside_box">
+                <div class="area_user">
+                    <div class="area_user_row">
+                        <span class="text_bold-13"> Project </span>
+                        <ul>
+                            <li><a href="/"> WESELL: </a></li>
+                        </ul>
+                    </div>
+                    <div class="area_user_row">
+                        <span class="text_bold-13"> People </span>
+                        <ul>
+                            <li><a href="https://github.com/vkekd25"> <i class="fa-brands fa-github"></i> 병우 </a></li>
+                            <li><a href="https://github.com/lyj7518"> <i class="fa-brands fa-github"></i> 유진 </a></li>
+                            <li><a href="https://github.com/grewtree"> <i class="fa-brands fa-github"></i> 창수 </a></li>
+                            <li><a href="https://github.com/Daj21"> <i class="fa-brands fa-github"></i> 다정 </a></li>
+                            <li><a href="https://github.com/woals182"> <i class="fa-brands fa-github"></i> 재민 </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_box">
+                <ul>
+                  <li><a href="/">제휴제안</a></li>
+                  <li><a href="/">이용약관</a></li>
+                  <li><a href="/">개인정보처리방침</a></li>
+                  <li><a href="/">고객센터</a></li>
+                  <li><a href="/">&copy; WESELL.</a></li>
+                </ul>
+              </div>
+        </footer>
+    </body>
+</html>

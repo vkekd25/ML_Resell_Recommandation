@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+web: gunicorn --workers=1 'price_app:create_app()'
+=======
+web: gunicorn --workers=1 'price_app:create_app()' 
+>>>>>>> d5239a0c140c3f9a7920c288f059c24c4156fda8
