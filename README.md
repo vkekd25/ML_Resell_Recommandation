@@ -1,9 +1,9 @@
 # Team_ML_Resell_Recommandation
 
 ## 부트캠프 ML 팀 프로젝트
-
-- 코드스테이츠 AI 부트캠프 과정중에 ML 팀 프로젝트입니다. 
 <br>
+- 코드스테이츠 AI 부트캠프 과정중에 ML 팀 프로젝트입니다. 
+
 
 ## Team_ML_Resell_Recommandation
 - **프로젝트 주제**
