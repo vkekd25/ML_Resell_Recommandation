@@ -1,7 +1,5 @@
 # Team_ML_Resell_Recommandation
 
-<br>
-
 ## 부트캠프 ML 프로젝트
 <br>
 
