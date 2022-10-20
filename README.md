@@ -29,7 +29,7 @@ R^2 : -0.1 -> 0.3
     - 웹사이트명: Catboost 공식문서
     - URL: https://catboost.ai/en/docs/concepts/python-reference_catboostregressor
   - bs4 beautifulsoup 라이브러리
-    - 웹사이트명: Albumentation 공식문서 
+    - 웹사이트명: bs4 공식문서 
     - URL: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
      
 
