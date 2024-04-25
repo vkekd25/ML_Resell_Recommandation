@@ -1,8 +1,8 @@
 # Team_ML_Resell_Recommandation
 
-## ML 5인 팀프로젝트
+## ML 팀프로젝트
 <br>
-- ML 팀 프로젝트입니다. 
+- ML 팀프로젝트입니다. 
 
 
 ## Team_ML_Resell_Recommandation
