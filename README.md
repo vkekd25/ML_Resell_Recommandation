@@ -2,7 +2,7 @@
 
 ## ML 팀 프로젝트
 <br>
-- AI 부트캠프 과정중에 ML 팀 프로젝트입니다. 
+- ML 팀 프로젝트입니다. 
 
 
 ## Team_ML_Resell_Recommandation
