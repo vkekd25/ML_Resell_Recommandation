@@ -1,6 +1,6 @@
 # Team_ML_Resell_Recommandation
 
-## ML 팀 프로젝트
+## ML 5인 팀프로젝트
 <br>
 - ML 팀 프로젝트입니다. 
 
